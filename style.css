@@ -77,6 +77,18 @@
 
  }
 
+ .txt p {
+     font-family: 'Indie Flower', cursive;
+     font-size: 6rem;
+     color: #3b4141;
+     letter-spacing: 0.2px;
+     position: absolute;
+     top: 15vw;
+     right: 10vw;
+     line-height: 80px;
+
+ }
+
  .favicon {
      width: 25%;
      margin-left: 15px;
@@ -163,7 +175,7 @@
  #baggrundsbillede {
      width: 100%;
      height: 100vh;
-     background-image: url(billeder/trineduusportfolie.svg);
+     background-image: url(billeder/final.svg);
      background-size: cover;
      background-position: 18% 10%;
      margin: 0;
@@ -439,6 +451,10 @@
 
      p {
          font-size: 1.1rem;
+     }
+
+     #baggrundsbillede .txt p {
+         font-size: 3rem;
      }
  }
 
