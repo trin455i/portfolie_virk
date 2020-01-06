@@ -1,0 +1,468 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ body {
+     margin: 0;
+     background-color: white;
+ }
+
+ img {
+     width: 100%;
+     border-radius: 10px;
+ }
+
+ embed {
+     width: 50vw;
+     border-radius: 10px;
+     height: 50vw;
+     display: flex;
+     flex-wrap: wrap;
+
+ }
+
+ .favicon {
+     width: 25%;
+     margin-left: 15px;
+ }
+
+ nav a {
+     color: black;
+     text-decoration-line: none;
+     font-size: 1rem;
+     font-family: 'Lato', sans-serif;
+     font-style: normal;
+     letter-spacing: 1px;
+     text-align: center;
+     background-color: white;
+     margin: 8px;
+     padding: 8px;
+     border-radius: 10px;
+     border: 1px solid rgba(191, 113, 96, 0.34);
+
+ }
+
+ nav a:hover {
+     background-color: rgba(191, 113, 96, 0.34);
+     color: black;
+     text-decoration-line: none;
+ }
+
+ h1 {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1.5rem;
+     color: #3b4141;
+     text-transform: uppercase;
+     margin-left: 10px;
+     margin-top: 20px;
+     font-weight: lighter;
+ }
+
+ h2 {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1.2rem;
+     color: #6d956d;
+     margin-left: 15px;
+     font-weight: normal;
+
+ }
+
+ p {
+     font-family: 'Lato', sans-serif;
+     font-size: 1.1rem;
+     line-height: 25px;
+     color: #3b4141;
+     margin-left: 10px;
+     letter-spacing: 0.5px;
+
+ }
+
+ .favicon {
+     width: 25%;
+     margin-left: 15px;
+ }
+
+ /*menu*/
+ /* tilføj en baggrundsfarve  */
+ .links {
+     background-color: rgba(127, 157, 127, 0.32);
+     overflow: hidden;
+ }
+
+ /* Style the links inside the navigation bar */
+ .links a {
+     float: left;
+     display: block;
+     color: #3b4141;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+ }
+
+ /* skift farve når musen er henover */
+ .links a:hover {
+     background-color: rgba(195, 103, 114, 0.28);
+     color: black;
+ }
+
+ /* fremhæve forsiden */
+ .links a.active {
+     background-color: rgba(191, 59, 75, 0.2);
+     color: white;
+ }
+
+ /* Skjul den lille menu, der skal åbne og lukke på små skærme */
+ .links .icon {
+     display: none;
+ }
+
+ /* Når skærmen er mindre end 600 pixels bred, skal du skjule alle links, undtagen det første ("forside"). Vis linket, der indeholder skal åbne og lukke lille meny (.icon) */
+ @media screen and (max-width: 600px) {
+     .links a:not(:first-child) {
+         display: none;
+     }
+
+     .links a.icon {
+         float: right;
+         display: block;
+     }
+ }
+
+ /* Links skal nu blive responsive, så det ser godt ud på små skærme. Det går linksene til at blive lodret i stedet for vandret */
+ @media screen and (max-width: 600px) {
+     .links.responsive {
+         position: relative;
+     }
+
+     .links.responsive a.icon {
+         position: absolute;
+         right: 0;
+         top: 0;
+     }
+
+     .links.responsive a {
+         float: none;
+         display: block;
+         text-align: left;
+     }
+
+     embed {
+         width: 100%;
+         border-radius: 10px;
+         height: 375px;
+
+     }
+ }
+
+ #forside {
+     padding: 8px;
+     margin: 8px;
+ }
+
+ #baggrundsbillede {
+     width: 100%;
+     height: 100vh;
+     background-image: url(billeder/trineduusportfolie.svg);
+     background-size: cover;
+     background-position: 18% 10%;
+     margin: 0;
+ }
+
+ #cv {
+     padding: 8px;
+     margin: 8px;
+ }
+
+ #cv .sectionwrapper {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ #cv .col {
+     flex-grow: 1;
+     flex-basis: 500px;
+     margin: 8px;
+     padding: 8px;
+     background-color: rgba(211, 163, 169, 0.2);
+     border-radius: 10px;
+ }
+
+ /*
+ #cv .top {
+     display: flex;
+     flex-wrap: wrap-reverse;
+ }
+
+ #cv .bottom {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap-reverse;
+ }
+*/
+
+ #cv .img {
+     flex-grow: 1;
+     flex-basis: 250px;
+
+ }
+
+ #html {
+     padding: 8px;
+     margin: 8px;
+ }
+
+ #html .sectionwrapper {
+     display: flex;
+     flex-wrap: wrap;
+     top: auto;
+ }
+
+ #html .col {
+     flex-grow: 1;
+     flex-basis: 500px;
+     margin: 8px;
+     padding: 8px;
+     background-color: rgba(211, 163, 169, 0.2);
+     border-radius: 10px;
+ }
+
+
+ /*
+ #html .top {
+     display: flex;
+     flex-wrap: wrap-reverse;
+ }
+
+ #html .bottom {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap-reverse;
+ }
+*/
+
+ #html .img {
+     flex-grow: 1;
+     flex-basis: 250px;
+ }
+
+ /*
+ #html .box {
+     top: 8.5vw;
+     right: 2.1vw;
+     position: absolute;
+     width: 22%;
+ }
+
+ #html .box2 {
+     top: 26vw;
+     right: 3.2vw;
+     position: absolute;
+     width: 5.5%;
+ }
+*/
+
+ #indhold {
+     padding: 8px;
+     margin: 8px;
+ }
+
+ #indhold .sectionwrapper {
+     display: flex;
+     flex-wrap: wrap;
+     top: auto;
+ }
+
+
+ #indhold .col {
+     flex-grow: 1;
+     flex-basis: 500px;
+     margin: 8px;
+     padding: 8px;
+     background-color: rgba(211, 163, 169, 0.2);
+     border-radius: 10px;
+ }
+
+ /*
+ #indhold .top {
+     display: flex;
+     flex-wrap: wrap-reverse;
+ }
+
+ #indhold .bottom {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap-reverse;
+ }
+*/
+
+
+ #indhold .img {
+     flex-grow: 1;
+     flex-basis: 250px;
+ }
+
+ .video_responsive {
+     overflow: hidden;
+     padding-bottom: 56.25%;
+     position: relative;
+     height: 0;
+ }
+
+ .video_responsive iframe {
+     left: 0;
+     top: 0;
+     height: 100%;
+     width: 100%;
+     position: absolute;
+ }
+
+
+ #ux {
+     padding: 8px;
+     margin: 8px;
+ }
+
+ #ux .sectionwrapper {
+     display: flex;
+     flex-wrap: wrap;
+     top: auto;
+ }
+
+ #ux .col {
+     flex-grow: 1;
+     flex-basis: 500px;
+     margin: 8px;
+     padding: 8px;
+     background-color: rgba(211, 163, 169, 0.2);
+     border-radius: 10px;
+ }
+
+ /*
+ #ux .top {
+     display: flex;
+     flex-wrap: wrap-reverse;
+ }
+
+ #ux .bottom {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap-reverse;
+ }
+*/
+
+ #ux .img {
+     flex-grow: 1;
+     flex-basis: 250px;
+ }
+
+
+
+ #animation {
+     padding: 8px;
+     margin: 8px;
+ }
+
+ #animation .sectionwrapper {
+     display: flex;
+     flex-wrap: wrap;
+     top: auto;
+ }
+
+ #animation .col {
+     flex-grow: 1;
+     flex-basis: 500px;
+     margin: 8px;
+     padding: 8px;
+     background-color: rgba(211, 163, 169, 0.2);
+     border-radius: 10px;
+     top: 20px;
+ }
+
+
+ /*
+ #animation .top {
+     display: flex;
+     flex-wrap: wrap-reverse;
+ }
+
+ #animation .bottom {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap-reverse;
+ }
+*/
+
+ #animation .img {
+     flex-grow: 1;
+     flex-basis: 250px;
+ }
+
+ .pulse {
+     animation-name: pulse_kf;
+     animation-duration: 1.5s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease;
+ }
+
+
+ @keyframes pulse_kf {
+     0% {
+         transform: scale(1);
+     }
+
+     50% {
+         transform: scale(1.05);
+     }
+
+     100% {
+         transform: scale(1);
+     }
+ }
+
+ @media only screen and (orientation:portrait) and (min-width:600px) {
+     embed {
+         width: 50vw;
+         border-radius: 10px;
+         display: flex;
+         flex-wrap: wrap;
+
+     }
+
+     h1 {
+         font-size: 1.5rem;
+     }
+
+     h2 {
+         font-size: 1.2rem;
+     }
+
+     p {
+         font-size: 1.1rem;
+     }
+ }
+
+
+
+ /*
+ @media only screen and (max-width: 500px) {
+
+     shows elements in a column
+     header nav {
+         flex-direction: column;
+     }
+
+     header nav a {
+         display: block;
+     }
+*/
+ /*
+padding: 2vw;
+font-size: 3vh;
+background-color: #AFE0FF;
+border: none;
+
+outline none removes the default blue border that appears anytime you click on the button outline: none;
+
+cursor: pointer;
+}*/
