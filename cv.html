@@ -7,28 +7,27 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="icon" type="billede/jpg" sizes="32x32" href="billeder/16x16.png">
+    <link rel="icon" type="billede/jpg" sizes="16x16" href="billeder/faviconfinal16x16.png">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <!-- Indlæs et ikonbibliotek for at vise en burgermenu (søjler) på små skærme -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <div class="links" id="mylinks">
-            <a href="forside.html" class="active">Forside</a>
-            <a href="html.html">Gundlæggende HTML</a>
-            <a href="ux.html">Gundlæggende UX</a>
-            <a href="animation.html">Gundlæggende animation</a>
-            <a href="indhold.html">Gundlæggende indhold</a>
-            <a href="cv.html">Om mig</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+        <nav>
+            <div id="menuknap">☰</div>
+            <div id="menu" class="hidden">
+                <li> <a href="forside.html" class="active">Forside</a></li>
+                <li><a href="html.html">Gundlæggende HTML</a></li>
+                <li><a href="ux.html">Gundlæggende UX</a></li>
+                <li><a href="animation.html">Gundlæggende animation</a></li>
+                <li><a href="indhold.html">Gundlæggende indhold</a></li>
+                <li> <a href="cv.html">Om mig</a></li>
+
+            </div>
+        </nav>
+
     </header>
     <section id="cv">
         <h1> CV </h1>
@@ -58,6 +57,9 @@
             </div>
         </div>
     </section>
+    <footer>Eksamensportfolie lavet af Trine Duus <br>
+        1 semester, Multimediedesign KEA</footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

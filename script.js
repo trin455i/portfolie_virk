@@ -1,17 +1,22 @@
 window.addEventListener("load", sidenVises);
 
 function sidenVises() {
-    console.log("siden vises");
-    document.querySelector(".container").addEventListener("touched", menuOpenClose);
-    document.querySelector(".container").addEventListener("click", menuOpenClose);
+    console.log("sidenVises");
+    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
+    document.querySelector("#txt").classList.add("pulse");
 }
 
-/* skift mellem at tilføje og fjerne "responsive" class til ''mylinks'' når brugeren clicker på ironet */
-function myFunction() {
-    var x = document.getElementById("mylinks");
-    if (x.className === "links") {
-        x.className += " responsive";
+
+function toggleMenu() {
+    console.log("toggleMenu");
+    document.querySelector("#menu").classList.toggle("hidden");
+
+    let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+    if (erSkjult == true) {
+        document.querySelector("#menuknap").textContent = "☰";
     } else {
-        x.className = "links";
+        document.querySelector("#menuknap").textContent = "X";
     }
 }
