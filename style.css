@@ -142,7 +142,7 @@
  }
 
  /* Links skal nu blive responsive, så det ser godt ud på små skærme. Det går linksene til at blive lodret i stedet for vandret */
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 900px) {
      .links.responsive {
          position: relative;
      }
@@ -160,8 +160,8 @@
      }
 
      embed {
-         width: 100%;
-         border-radius: 10px;
+         width: 50vw;
+         /*         border-radius: 10px;*/
          height: 375px;
 
      }
@@ -391,6 +391,15 @@
      top: 20px;
  }
 
+ #animation .col {
+     flex-grow: 1;
+     flex-basis: 500px;
+     margin: 8px;
+     padding: 8px;
+     background-color: rgba(211, 163, 169, 0.2);
+     border-radius: 10px;
+     top: 20px;
+ }
 
  /*
  #animation .top {
@@ -432,7 +441,7 @@
      }
  }
 
- @media only screen and (orientation:portrait) and (min-width:600px) {
+ @media only screen and (max-width:900px) {
      embed {
          width: 50vw;
          border-radius: 10px;
@@ -453,8 +462,9 @@
          font-size: 1.1rem;
      }
 
-     #baggrundsbillede .txt p {
-         font-size: 3rem;
+     .txt p {
+         font-size: 2.5rem;
+         line-height: 40px;
      }
  }
 
